@@ -25,4 +25,4 @@ The purpose of this website is to help people find and search for lost items in 
 - **Framer Motion**: For adding animations.  
 - **React Icons**: For stylish and consistent icons.  
 - **React Helmet**: For managing metadata and improving SEO.  
-- **React Marquee**: For creating scrolling text effects.  
+- **React Marquee**: For creating scrolling text effects
