@@ -18,7 +18,7 @@ The purpose of this website is to help people find and search for lost items in 
 - **User Authentication**: Secure registration, login, and social login options.  
 - **Manage Your Posts**: Users can view, update, and delete their own posts based on their credentials.  
 - **Recovered Items Section**: A dedicated area to view items that have been recovered.  
-- **Protected Routes**: Pages and actions are secured and require user login.  
+- **Protected Routes**: Pages and actions are secured and require user login....
 
 ## NPM Packages Used
 
