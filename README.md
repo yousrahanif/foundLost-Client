@@ -3,6 +3,7 @@
 **WhereIsIt** is a platform designed to help people find and report lost items. It enables users to post about items they've lost or found, view all posted items, and manage their own posts. The website ensures user security with protected routes and authentication features.
 
 ## Live URL
+https://simple-firebase-project-3dd52.web.app
 
 [WhereIsIt](https://simple-firebase-project-3dd52.web.app/)
 
