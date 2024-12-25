@@ -6,7 +6,7 @@
 
 [WhereIsIt](https://simple-firebase-project-3dd52.web.app/)
 
-## Purpose//
+## Purpose
 
 The purpose of this website is to help people find and search for lost items in a simple and organized way.
 
