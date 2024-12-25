@@ -20,7 +20,7 @@ The purpose of this website is to help people find and search for lost items in 
 - **Recovered Items Section**: A dedicated area to view items that have been recovered.  
 - **Protected Routes**: Pages and actions are secured and require user login.  
 
-## NPM Packages Used
+## NPM Packages Used..
 
 - **Framer Motion**: For adding animations.  
 - **React Icons**: For stylish and consistent icons.  
