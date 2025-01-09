@@ -46,7 +46,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="mx-auto w-11/12">
+    <div className="mx-auto w-11/12 sticky top-0 z-50 shadow-md bg-base-100">
       <div className="text-right m-4">
         <input
           onClick={handleToggleTheme}
