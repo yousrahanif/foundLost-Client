@@ -134,7 +134,7 @@ createUser(email,password)
               </button>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="btn bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300  ">Register</button>
               </div>
               <p>Already have an Account? Please <Link className="text-blue-600" to="/login">Login</Link></p>
             </form>

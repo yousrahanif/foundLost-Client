@@ -164,16 +164,22 @@ const RecoveredItems = () => {
               <Helmet>
                                <title>Recovered Items - ReturnPoint</title>
                              </Helmet>
-            <h1 className="text-3xl font-bold text-center p-4">My Recovered Items</h1>
+                             <h1 className="text-4xl font-extrabold text-center p-4 bg-gradient-to-r from-blue-200 via-blue-500 to-purple-500 text-transparent bg-clip-text animate-pulse drop-shadow-lg">
+  My Recovered Items
+</h1>
 
             <div className="flex justify-between mb-4">
-                <button
-                    onClick={toggleLayout}
-                    className="btn btn-primary flex items-center gap-2 justify-center">
-                    {isGridLayout ? <FaTable /> : <FaTh />} 
-                    <span>{isGridLayout ? 'Table View' : 'Grid View'}</span> 
-                </button>
-            </div>
+
+</div>
+<div className='flex items-center gap-2 justify-center'>
+<button
+    onClick={toggleLayout}
+    className="btn bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300   ">
+    {isGridLayout ? <FaTable /> : <FaTh />}
+    <span>{isGridLayout ? 'Table View' : 'Grid View'}</span>
+  </button>
+</div>
+
 
             <div className='flex justify-center mb-4'>
                 {recoveredItems.length === 0 ? (

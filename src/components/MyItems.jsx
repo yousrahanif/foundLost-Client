@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import axios from 'axios';
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
 const MyItems = () => {
     const { user, loading } = useContext(AuthContext); // Get user info from context
@@ -93,8 +94,12 @@ const MyItems = () => {
               <Helmet>
                                <title>My Items - ReturnPoint</title>
                              </Helmet>
-            <h1 className="text-3xl font-bold text-center p-4">My Items</h1>
+            <h1 className="text-3xl font-bold text-center p-4 bg-gradient-to-r from-blue-200 via-blue-500 to-purple-500 text-transparent bg-clip-text animate-pulse drop-shadow-lg">My Items</h1>
 
+
+
+
+       
             <div className='flex justify-center mb-4'>
                 {items.length === 0 ? (
                     <div role="alert" className="alert alert-warning">
@@ -137,8 +142,9 @@ const MyItems = () => {
                                         <td>{item.description}</td>
                                         <td>{item.name}</td>
                                         <td>
-                                        <NavLink to={`/allItems/${item._id}`} className="btn btn-sm btn-warning mr-2">Update</NavLink>
-                                        <button  onClick={() => handleDelete(item._id)} className="btn btn-sm btn-error">Delete</button>
+                                        <NavLink to={`/allItems/${item._id}`} className="btn btn-sm bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100   mr-2 text-white"> <FaEdit className="text-blue-500" />
+                                        </NavLink>
+                                        <button  onClick={() => handleDelete(item._id)} className="btn btn-sm bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100 text-white "> <FaTrash className="text-purple-500" /></button>
                                         </td>
                                     </tr>
                                 ))}

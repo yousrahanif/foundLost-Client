@@ -66,7 +66,9 @@ const AddPost = () => {
        
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl font-bold">Add Post</h1>
+          <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300 text-center ">
+  Add Post
+</h1>
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form onSubmit={handleAddPost} className="card-body" encType="multipart/form-data">
@@ -178,7 +180,7 @@ const AddPost = () => {
               </div>
   
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Add Post</button>
+                <button className="btn bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300 text-white  ">Add Post</button>
               </div>
             </form>
           </div>

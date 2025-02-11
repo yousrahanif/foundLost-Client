@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className=''>
             <Helmet>
         <title>Home - ReturnPoint</title>
       </Helmet>

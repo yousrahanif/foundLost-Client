@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { AuthContext } from '../providers/AuthProvider';
-
+import logo from '../assets/logo.jpg'
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   const [theme, setTheme] = useState('light');
@@ -25,20 +25,20 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li>
+      <li className='font-bold text-lg text-blue-700'>
         <NavLink to="/addItems">Add Lost & Found Item</NavLink>
       </li>
-      <li>
+      <li className='font-bold text-lg text-blue-700'>
         <NavLink to="/allItems">All Items</NavLink>
       </li>
-      <li>
+      <li className='font-bold text-lg text-blue-700'>
         <NavLink to="/recoveredItems">All Recovered Items</NavLink>
       </li>
-      <li>
+      <li className='font-bold text-lg text-blue-700'>
         <NavLink to="/myItems">Manage My Items</NavLink>
       </li>
       {user && (
-      <li>
+      <li className='font-bold text-lg text-blue-700'>
         <button onClick={handleSignOut}>Sign Out</button>
       </li>
     )}
@@ -46,7 +46,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="mx-auto w-11/12 sticky top-0 z-50 shadow-md bg-base-100">
+    <div className=" bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100  sticky top-0 z-50 shadow-md ">
       <div className="text-right m-4">
         <input
           onClick={handleToggleTheme}
@@ -55,7 +55,7 @@ const Navbar = () => {
           className="toggle theme-controller"
         />
       </div>
-      <div className="navbar bg-base-100 relative z-10">
+      <div className="navbar bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100 relative z-10">
      
         <div className="navbar-start">
           <div className="dropdown relative">
@@ -82,9 +82,10 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <NavLink to="/" className="text-xl font-bold ml-4">
-            FundTogether
-          </NavLink>
+          <NavLink to="/" className="text-xl font-bold ml-4 flex items-center">
+  <img src={logo} className="w-12 h-12 rounded-full mr-2" alt="Logo" />
+  <span className='text-blue-700'>ReturnPoint</span>
+</NavLink>
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -93,7 +94,7 @@ const Navbar = () => {
 
         <div className="navbar-end">
           {user ? (
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4  text-3xl font-bold text-blue-700">
               <img
                 id="photoUrlId"
                 src={user.photoURL || 'https://i.ibb.co/kSMdsjQ/website.jpg'}
