@@ -11,6 +11,7 @@ import DetailsPage from "../components/DetailsPage";
 import MyItems from "../components/MyItems";
 import UpdatePost from "../components/UpdatePost";
 import RecoveredItems from "../components/RecoveredItems";
+import AboutUs from "../components/AboutUs";
 
 
 const Router = createBrowserRouter([
@@ -84,6 +85,11 @@ loader: ({ params }) => fetch(`https://lost-found-server-site.vercel.app/allItem
 
 
                       },
+                      {
+                        path: "/aboutPage",
+                      element: <AboutUs></AboutUs>
+                
+                        },
 
       ]
       
