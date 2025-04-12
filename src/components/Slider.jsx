@@ -99,7 +99,7 @@ const Slider = () => {
             />
           </h1>
           <Link to="/addItems">
-            <button className="btn bg-blue-500 mt-6 text-white px-6 py-3 rounded hover:bg-blue-600">
+            <button className="btn text-white bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300 hover:bg-blue-700 px-6 py-3 rounded font-semibold transition-all duration-300">
               Browse!
             </button>
           </Link>
