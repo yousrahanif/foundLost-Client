@@ -3,7 +3,8 @@ import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { AuthContext } from '../providers/AuthProvider';
-import logo from '../assets/logo.jpg'
+import logo from "../assets/logo.png"
+
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   const [theme, setTheme] = useState('light');
@@ -47,14 +48,14 @@ const Navbar = () => {
 
   return (
     <div className=" bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100  sticky top-0 z-50 shadow-md ">
-      <div className="text-right m-4">
+      {/* <div className="text-right m-4">
         <input
           onClick={handleToggleTheme}
           type="checkbox"
           value="synthwave"
           className="toggle theme-controller"
         />
-      </div>
+      </div> */}
       <div className="navbar bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100 relative z-10">
      
         <div className="navbar-start">

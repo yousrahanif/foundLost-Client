@@ -4,7 +4,7 @@ const Testimonials = () => {
     return (
         
         <div className="mx-auto w-11/12 flex flex-col justify-center items-center m-4">
-<h2 className="mt-2 text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text animate-pulse drop-shadow-md">
+<h2 className="mt-2 text-5xl font-light text-center mb-6 text-blue-500  bg-clip-text  drop-shadow-md">
     💬 What People Are Saying 💭
 </h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-center items-center">

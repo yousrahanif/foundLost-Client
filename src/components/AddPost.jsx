@@ -66,7 +66,7 @@ const AddPost = () => {
        
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left">
-          <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-400 to-purple-300 text-center ">
+          <h1 className="text-4xl font-light text-center  text-blue-500  bg-clip-text  drop-shadow-md">
   Add Post
 </h1>
           </div>
@@ -89,7 +89,7 @@ const AddPost = () => {
                 <label className="label">
                   <span className="label-text">Url</span>
                 </label>
-                <input type="url" name="thumbnail" className="file-input file-input-bordered" placeholder='image url' required />
+                <input type="url" name="thumbnail" className="file-input file-input-bordered" placeholder='   image url' required />
               </div>
   
               <div className="form-control">

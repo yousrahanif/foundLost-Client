@@ -35,13 +35,13 @@ import { Link } from 'react-router-dom';
 const AllItemsCard = ({ item }) => {
   return (
     <div className="flex justify-center">
-      <div className="card bg-base-100 w-96 h-[450px] shadow-xl flex flex-col justify-between">
+      <div className="card bg-base-100 w-96 h-[450px] shadow-xl flex flex-col justify-between p-4">
         {/* Image Section */}
-        <figure className="px-10 pt-10 h-[150px]">
+        <figure className="px-10 pt-10 h-[350px]">
           <img
             src={item.thumbnail}
             alt="Item"
-            className="rounded-xl h-[250px] w-ful object-cover"
+            className="rounded-xl h-[150px] w-[150px]"
           />
         </figure>
         

@@ -7,7 +7,7 @@ const Stat = () => {
                 <div className="hero-content text-center">
                     <div>
                         {/* Eye-Catching Title */}
-                        <h1 className="mt-2 text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 text-transparent bg-clip-text animate-pulse drop-shadow-md">
+                        <h1 className="mt-2 text-5xl font-light text-center mb-6 text-blue-500  bg-clip-text  drop-shadow-md">
                             🚀 Our Lost and Found Progress 🌟
                         </h1>
                         
